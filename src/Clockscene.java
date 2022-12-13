@@ -16,13 +16,13 @@ public class Clockscene {
         sky = new GLHimmel("src/white.png");
 
         clock1 = new Clock(-500, 0,"London");
-        clock1.stelleZeit(1, 15);
+        clock1.setTime(1, 15);
 
         clock2 = new Clock(0, 0, "Washington");
-        clock2.stelleZeit(2,15);
+        clock2.setTime(2,15);
 
         clock3 = new Clock(+500, 0, "Berlin");
-        clock3.stelleZeit(3,15);
+        clock3.setTime(3,15);
 
         run();
     }
