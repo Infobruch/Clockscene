@@ -10,9 +10,9 @@ public class Clock {
         display = new GLTafel(x, y - 300, 0, 250, 80);
         display.setzeTextur("src/" + city + ".png");
 
-        seconds = new Pointer(x, y, 160, 2, 360.0 / 60);
-        minutes = new Pointer(x, y, 140, 6, 360.0 / (60 * 60));
-        hours = new Pointer(x, y, 80, 8, 360.0 / (60 * 12 * 60));
+        seconds = new Pointer(x, y, 160, 2, 360.0 / 60,1,0,1);
+        minutes = new Pointer(x, y, 140, 6, 360.0 / (60 * 60),1,1,1);
+        hours = new Pointer(x, y, 80, 8, 360.0 / (60 * 12 * 60),0,1,1);
     }
 
     public void stelleZeit(int pHour, int pMinutes) {
@@ -20,10 +20,10 @@ public class Clock {
         minutes.setPointer(pMinutes * 360 / 60);
     }
 
-    public void weiter() {
-        seconds.weiter();
-        minutes.weiter();
-        hours.weiter();
+    public void rotatePointer() {
+        seconds.rotatePointer();
+        minutes.rotatePointer();
+        hours.rotatePointer();
     }
 
 }
