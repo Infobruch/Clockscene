@@ -1,14 +1,14 @@
 import GLOOP.*;
 public class Dial {
-    private GLZylinder rueckwand,narbe;
-    private GLTorus umrandung;
+    private GLZylinder backWall,barrel;
+    private GLTorus border;
 
     public Dial(double x, double y){
-        rueckwand = new GLZylinder(x,y,-5, 210,5,"src/Holz.jpg");
+        backWall = new GLZylinder(x,y,-5, 210,5,"src/Holz.jpg");
 
-        narbe = new GLZylinder (x,y,0,10,5);
+        barrel = new GLZylinder (x,y,0,10,5);
 
-        umrandung = new GLTorus (x,y,0,215,15,"src/Holzboden.jpg");
+        border = new GLTorus (x,y,0,215,15,"src/Holzboden.jpg");
     }  
 
 }
