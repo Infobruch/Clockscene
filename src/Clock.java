@@ -15,9 +15,10 @@ public class Clock {
         hours = new Pointer(x, y, 80, 8, 360.0 / (60 * 12 * 60),0,1,1);
     }
 
-    public void setTime(int pHour, int pMinutes) {
+    public void setTime(int pHour, int pMinutes, int pSeconds) {
         hours.setPointer(pHour * 360 / 12);
         minutes.setPointer(pMinutes * 360 / 60);
+        seconds.setPointer(pSeconds * 360 / 60/ 60);
     }
 
     public void rotatePointer() {
