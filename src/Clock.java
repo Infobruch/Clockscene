@@ -8,7 +8,7 @@ public class Clock {
         dial = new Dial(x, y);
 
         display = new GLTafel(x, y - 300, 0, 250, 80);
-        display.setzeTextur("src/" + city + ".png");
+        display.setzeText("city", 16);
 
         seconds = new Pointer(x, y, 160, 2, 360.0 / 60,1,0,1);
         minutes = new Pointer(x, y, 140, 6, 360.0 / (60 * 60),1,1,1);

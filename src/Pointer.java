@@ -17,7 +17,8 @@ public class Pointer {
     public void rotatePointer(){
         pointer.drehe(0,0,-speed, xPos,yPos,0);
     }
-    
+
+
     public void setPointer(double angle){
         pointer.setzeDrehung(90,0,0);
         pointer.setzePosition (xPos,yPos+length/2,0);

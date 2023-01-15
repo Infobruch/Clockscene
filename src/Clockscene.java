@@ -7,7 +7,6 @@ public class Clockscene {
     GLTastatur kb;
     GLHimmel sky;
     Clock clock1, clock2, clock3;
-    ZoneId zone;
 
     ZoneId time;
 
