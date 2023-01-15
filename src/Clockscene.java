@@ -31,6 +31,7 @@ public class Clockscene {
         time = ZoneId.of("Europe/Brussels");
         clock3 = new Clock(+500, 0, "Berlin");
         clock3.setTime(getHour(time),getMinute(time), getSecond(time));
+        System.out.println(getSecond(time));
 
         run();
     }

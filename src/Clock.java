@@ -8,7 +8,7 @@ public class Clock {
         dial = new Dial(x, y);
 
         display = new GLTafel(x, y - 300, 0, 250, 80);
-        display.setzeText("city", 16);
+        display.setzeText(city, 30);
 
         seconds = new Pointer(x, y, 160, 2, 360.0 / 60,1,0,1);
         minutes = new Pointer(x, y, 140, 6, 360.0 / (60 * 60),1,1,1);
@@ -18,7 +18,7 @@ public class Clock {
     public void setTime(int pHour, int pMinutes, int pSeconds) {
         hours.setPointer(pHour * 360 / 12);
         minutes.setPointer(pMinutes * 360 / 60);
-        seconds.setPointer(pSeconds * 360 / 60/ 60);
+        seconds.setPointer(pSeconds * 360 / 60);
     }
 
     public void rotatePointer() {
